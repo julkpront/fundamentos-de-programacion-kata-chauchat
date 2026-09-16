@@ -1,0 +1,25 @@
+//Kata Chauchat
+
+//Cargador 7 "Pium"
+
+const cargador = ["pium!", "pium!", "pium!", "pium!", "pium!", "pium!", "pium!"];
+
+function chauchat(balas) {
+
+  if (Math.random() < 0.8) {
+console.log("Illo, me he quedao pillá!")
+return;
+}
+
+let disparos = 0;
+for (let i = 0; i < balas.length; i++) {
+
+console.log(balas[i]);
+disparos = disparos + 1;
+
+if (disparos % 3 === 0) {
+    console.log("");
+    }
+    }
+}
+chauchat(cargador);
